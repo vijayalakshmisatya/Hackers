@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Vista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="myntra-logo.png" alt="Myntra Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" data-section="home">Home</a></li>
+            <li><a href="#" data-section="street-style">Street Style</a></li>
+            <li><a href="#" data-section="event-based-outfits">Event-Based Outfits</a></li>
+            <li><a href="#" data-section="community">Community</a></li>
+        </ul>
+    </nav>
+    
+    <div id="home" class="section">
+        <h2>Home</h2>
+        <!-- Home content will be added here -->
+    </div>
+    
+    <div id="street-style" class="section" style="display: none;">
+        <h2>Street Style</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="Screenshot_1279.jpg" alt="Street Style Main Image">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Screenshot_1278.jpg" alt="City 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="city2.jpg" alt="City 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="city3.jpg" alt="City 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="city4.jpg" alt="City 4">
+                </div>
+            </div>
+        </div>
+        <div class="city-cards">
+            <div class="city-card">
+                <div class="card-image" style="background-image: url('mumbai.jpg');">
+                    <div class="card-hover">
+                        <p>Explore Mumbai</p>
+                        <a href="mumbai.html" class="check-it-out">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="card-image" style="background-image: url('d14.jpg');">
+                    <div class="card-hover">
+                        <p>Explore Delhi</p>
+                        <a href="delhi.html" class="check-it-out">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="card-image" style="background-image: url('bangalore.jpg');">
+                    <div class="card-hover">
+                        <p>Explore Bangalore</p>
+                        <a href="bangalore.html" class="check-it-out">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="event-based-outfits" class="section" style="display: none;">
+        <h2>Event-Based Outfits</h2>
+        <div class="event-categories">
+            <div class="event-category">
+                <div class="category-image" style="background-image: url('f1.jpg');">
+                    <div class="category-hover">
+                        <p>Formal Events</p>
+                        <a href="formal-events.html" class="check-it-out">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-category">
+                <div class="category-image" style="background-image: url('casual-outing.jpg');">
+                    <div class="category-hover">
+                        <p>Casual Outings</p>
+                        <a href="casual-outings.html" class="check-it-out">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-category">
+                <div class="category-image" style="background-image: url('party.jpg');">
+                    <div class="category-hover">
+                        <p>Parties</p>
+                        <a href="parties.html" class="check-it-out">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-category">
+                <div class="category-image" style="background-image: url('wedding.jpg');">
+                    <div class="category-hover">
+                        <p>Weddings</p>
+                        <a href="weddings.html" class="check-it-out">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="community" class="section" style="display: none;">
+        <header class="community-header">
+            <button class="community-upload-button" onclick="toggleUploadForm()">Upload</button>
+        </header>
+        <aside class="community-aside">
+            <div class="community-profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+            <div class="community-stats">
+                <p>Followers: 2022</p>
+                <p>Following: 590</p>
+                <p>Supercoins: 1500</p>
+            </div>
+            <div class="community-my-posts">
+                <h3>My Posts</h3>
+                <div class="community-posts" id="my-posts">
+                    <!-- User uploaded posts will appear here -->
+                </div>
+            </div>
+        </aside>
+        <main class="community-main" id="community-main">
+            <div class="community-post">
+                <div class="community-post-header">
+                    <img src="user1.jpg" alt="User">
+                    <div>
+                        <h3>Jaiswal Singh</h3>
+                        <p>Content Creator</p>
+                    </div>
+                </div>
+                <div class="community-post-content">
+                    <p>Bon Appetite !!</p>
+                    <img src="food.jpg" alt="Food">
+                    <p>#food #foodphotography #italiancuisine</p>
+                </div>
+                <div class="community-post-actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Shop</button>
+                </div>
+            </div>
+            <div class="community-post">
+                <div class="community-post-header">
+                    <img src="user2.jpg" alt="User">
+                    <div>
+                        <h3>Mrudhula Sree</h3>
+                        <p>Photographer</p>
+                    </div>
+                </div>
+                <div class="community-post-content">
+                    <p>Shot Picture...</p>
+                    <img src="images (6).jpeg" alt="Camera">
+                    <p>#photography #nikon #picturestudio</p>
+                </div>
+                <div class="community-post-actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Shop</button>
+                </div>
+            </div>
+        </main>
+        
+        <div id="upload-form" class="upload-form" style="display: none;">
+            <h2>Upload a Post</h2>
+            <form id="post-form">
+                <label for="post-text">Text:</label>
+                <textarea id="post-text" name="post-text" rows="4" required></textarea>
+                <label for="post-image">Image:</label>
+                <input type="file" id="post-image" name="post-image" accept="image/*" required>
+                <label for="post-hashtags">Hashtags:</label>
+                <input type="text" id="post-hashtags" name="post-hashtags" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
